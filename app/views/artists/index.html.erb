@@ -1,0 +1,5 @@
+<h1>ALL ARTISTS</h1>
+<% @artists.each do |t| %>
+    <p><%= link_to t.name, artist_path(t.id) %></p>
+<% end %>
+<button><%= link_to "Create Artist", new_artist_path %></button>
